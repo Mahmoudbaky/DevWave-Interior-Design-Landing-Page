@@ -1,5 +1,3 @@
-import { icons } from "lucide-react";
-
 const OurServices = () => {
   const ourServices = [
     {

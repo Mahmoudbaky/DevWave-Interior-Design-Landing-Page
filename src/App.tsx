@@ -5,6 +5,8 @@ import {
   DesigningYourDream,
   ThreeSimpleSteps,
   CustomersFeedbacks,
+  Newsletter,
+  Footer,
 } from "./components";
 
 const App = () => {
@@ -16,6 +18,8 @@ const App = () => {
       <DesigningYourDream />
       <ThreeSimpleSteps />
       <CustomersFeedbacks />
+      <Newsletter />
+      <Footer />
     </div>
   );
 };
