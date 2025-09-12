@@ -4,6 +4,7 @@ import {
   OurServices,
   DesigningYourDream,
   ThreeSimpleSteps,
+  CustomersFeedbacks,
 } from "./components";
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
       <OurServices />
       <DesigningYourDream />
       <ThreeSimpleSteps />
+      <CustomersFeedbacks />
     </div>
   );
 };
