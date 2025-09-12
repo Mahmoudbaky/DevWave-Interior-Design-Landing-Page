@@ -12,7 +12,7 @@ const Header = () => {
     <header className="container mx-auto px-4 md:px-0 my-5 text-white flex justify-between items-center">
       <div className="w-[177px] h-[48px]">
         <img
-          src="./src/assets/images/Logo.png"
+          src="public/images/Logo.png"
           alt="logo"
           //   width={177}
           //   height={48}
