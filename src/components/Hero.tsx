@@ -45,12 +45,12 @@ const Hero = () => {
       {/* Right side content (images) */}
 
       <div className="absolute -top-0 -right-0  w-[350px] h-[428px]">
-        <img src="./src/assets/images/image-1.png" alt="image-1" />
+        <img src="/src/assets/images/image-1.png" alt="image-1" />
       </div>
 
       <div className="absolute z-10 -bottom-0 -right-[-50px]">
         <img
-          src="./src/assets/images/image-2.png"
+          src="/src/assets/images/image-2.png"
           alt="image-2"
           width={480}
           height={300}
