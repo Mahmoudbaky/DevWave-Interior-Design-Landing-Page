@@ -12,7 +12,7 @@ const AnimatedNumber = ({ to }: { to: number }) => {
   const count = useMotionValue(0);
   const [display, setDisplay] = useState(0);
 
-  useAnimationFrame((t) => {
+  useAnimationFrame(() => {
     setDisplay(Math.floor(count.get()));
   });
 
