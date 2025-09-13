@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 
 const Header = () => {
   const menuItems = [
-    { name: "Home", link: "#" },
-    { name: "Services", link: "#" },
+    { name: "Home", link: "#hero" },
+    { name: "Services", link: "#services" },
     { name: "Contact", link: "#" },
     { name: "Support", link: "#" },
   ];

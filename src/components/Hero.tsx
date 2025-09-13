@@ -22,7 +22,11 @@ const AnimatedNumber = ({ to }: { to: number }) => {
     animate(count, to, { duration: 2 });
   }, [to]);
 
-  return <motion.p className="text-[70px] text-[#545454]">{display}+</motion.p>;
+  return (
+    <motion.p className="text-[30px] md:text-[70px] text-[#545454]">
+      {display}+
+    </motion.p>
+  );
 };
 
 const Hero = () => {
@@ -30,15 +34,15 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="container relative mx-auto px-4  min-h-[620px] md:px-0 flex flex-col md:flex-row items-center justify-between p-6 gap-8 "
+      className="container relative mx-auto px-4 min-h-[620px] md:px-0 flex flex-col md:flex-row items-center justify-between p-6 gap-8"
     >
       {/* Left side content (text and buttons) */}
-      <div className="flex flex-col justify-between gap-16 items-center md:items-start ">
+      <div className="w-full flex flex-col justify-between gap-16  md:items-start">
         <div className="flex flex-col gap-3.5">
-          <h1 className="text-4xl md:text-[133px] font-medium text-center md:text-left">
+          <h1 className="text-[70px] md:text-[133px] font-medium  text-left">
             Interior Design
           </h1>
-          <p className="w-[759px] text-[#545454] text-[20px]">
+          <p className="max-w-[759px] text-[#545454] text-[20px]">
             Step into a world where the art of Interior Design is meticulously
             crafted to bring together timeless elegance and cutting-edge modern
             Innovation, Allowing you to transform your living spaces into the
@@ -51,7 +55,7 @@ const Hero = () => {
         >
           Start Project
         </Button>
-        <div className="flex gap-14 text-center ">
+        <div className="flex gap-14 text-center">
           <div>
             <AnimatedNumber to={400} />
             <p className="text-[20px] text-[#545454]">Project Complete</p>
@@ -69,7 +73,7 @@ const Hero = () => {
 
       {/* Right side content (images) */}
 
-      <div className="absolute -top-0 -right-0  w-[350px] h-[428px]">
+      <div className="hidden xl:block absolute -top-0 -right-0 w-[350px] h-[428px]">
         <motion.img
           src="/images/Image-1.png"
           alt="image-1"
@@ -86,7 +90,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="absolute z-10 -bottom-0 -right-[-50px]">
+      <div className="hidden xl:block absolute z-10 -bottom-0 -right-[-50px]">
         <motion.img
           src="/images/Image-2.png"
           alt="image-2"
@@ -105,11 +109,11 @@ const Hero = () => {
         />
       </div>
 
-      <div className="absolute  -bottom-[-175px] -right-[-400px] w-[150px] h-[150px]  border-2 border-black"></div>
+      <div className="hidden xl:block absolute -bottom-[-175px] -right-[-400px] w-[150px] h-[150px]  border-2 border-black"></div>
 
       <div
         onClick={() => window.scrollTo({ top: 620, behavior: "smooth" })}
-        className="text-white flex items-center justify-center bg-black absolute z-30 rounded-[0px] -bottom-0 -right-0 w-[100px] h-[100px]"
+        className="hidden xl:flex text-white  items-center justify-center bg-black absolute z-30 rounded-[0px] -bottom-0 -right-0 w-[100px] h-[100px]"
       >
         <MoveDown size={50} strokeWidth={1} />
       </div>

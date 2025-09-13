@@ -14,7 +14,7 @@ const Footer = () => {
         id="newsletter"
         className="container mx-auto bg-[#1f1f1f] min-h-[400px]"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-20 px-6">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 py-20 px-6">
           {/* col 1 */}
           <div className="flex flex-col gap-6 justify-between h-60 ">
             <img src="/images/Logo-2.png" alt="Logo-2" width={150} />
