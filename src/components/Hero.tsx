@@ -1,7 +1,32 @@
 import { Button } from "./ui/button";
 import { MoveDown } from "lucide-react";
+import { useState, useEffect } from "react";
+import {
+  motion,
+  useMotionValue,
+  useAnimationFrame,
+  animate,
+} from "framer-motion";
+
+const AnimatedNumber = ({ to }: { to: number }) => {
+  const count = useMotionValue(0);
+  const [display, setDisplay] = useState(0);
+
+  useAnimationFrame((t) => {
+    setDisplay(Math.floor(count.get()));
+  });
+
+  useEffect(() => {
+    count.set(0);
+    count.stop();
+    animate(count, to, { duration: 2 });
+  }, [to]);
+
+  return <motion.p className="text-[70px] text-[#545454]">{display}+</motion.p>;
+};
 
 const Hero = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
   return (
     <section
       id="home"
@@ -28,15 +53,15 @@ const Hero = () => {
         </Button>
         <div className="flex gap-14 text-center ">
           <div>
-            <p className="text-[70px] text-[#545454]">400+</p>
+            <AnimatedNumber to={400} />
             <p className="text-[20px] text-[#545454]">Project Complete</p>
           </div>
           <div>
-            <p className="text-[70px] text-[#545454]">600+</p>
+            <AnimatedNumber to={600} />
             <p className="text-[20px] text-[#545454]">Satisfied Clients</p>
           </div>
           <div>
-            <p className="text-[70px] text-[#545454]">100+</p>
+            <AnimatedNumber to={100} />
             <p className="text-[20px] text-[#545454]">Unique Styles</p>
           </div>
         </div>
@@ -45,16 +70,47 @@ const Hero = () => {
       {/* Right side content (images) */}
 
       <div className="absolute -top-0 -right-0  w-[350px] h-[428px]">
-        <img src="/images/Image-1.png" alt="image-1" />
+        <motion.img
+          src="/images/Image-1.png"
+          alt="image-1"
+          onLoad={() => setImageLoaded(true)}
+          initial={{ opacity: 0, filter: "blur(10px)" }}
+          animate={{
+            opacity: imageLoaded ? 1 : 0,
+            filter: imageLoaded ? "blur(0px)" : "blur(10px)",
+          }}
+          transition={{
+            duration: 1.5,
+            ease: "easeOut",
+          }}
+        />
       </div>
 
       <div className="absolute z-10 -bottom-0 -right-[-50px]">
-        <img src="/images/image-2.png" alt="image-2" width={480} height={300} />
+        <motion.img
+          src="/images/Image-2.png"
+          alt="image-2"
+          width={480}
+          height={300}
+          onLoad={() => setImageLoaded(true)}
+          initial={{ opacity: 0, filter: "blur(10px)" }}
+          animate={{
+            opacity: imageLoaded ? 1 : 0,
+            filter: imageLoaded ? "blur(0px)" : "blur(10px)",
+          }}
+          transition={{
+            duration: 1.5,
+            ease: "easeOut",
+          }}
+        />
       </div>
 
       <div className="absolute  -bottom-[-175px] -right-[-400px] w-[150px] h-[150px]  border-2 border-black"></div>
 
-      <div className="text-white flex items-center justify-center bg-black absolute z-30 rounded-[0px] -bottom-0 -right-0 w-[100px] h-[100px]">
+      <div
+        onClick={() => window.scrollTo({ top: 620, behavior: "smooth" })}
+        className="text-white flex items-center justify-center bg-black absolute z-30 rounded-[0px] -bottom-0 -right-0 w-[100px] h-[100px]"
+      >
         <MoveDown size={50} strokeWidth={1} />
       </div>
     </section>

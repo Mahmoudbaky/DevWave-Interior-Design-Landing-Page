@@ -7,7 +7,7 @@ const DesigningYourDream = () => {
         {/* Left side : image */}
         <div>
           <img
-            src="./src/assets/images/Mask-group.png"
+            src="/images/Mask-group.png"
             alt="Designing your dream"
             width={650}
           />

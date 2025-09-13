@@ -64,7 +64,7 @@ const ThreeSimpleSteps = () => {
         {/* Left side : image */}
         <div>
           <img
-            src="./src/assets/images/Mask-group-2.png"
+            src="/images/Mask-group-2.png"
             alt="Designing your dream"
             width={650}
           />

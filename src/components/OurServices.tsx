@@ -4,19 +4,19 @@ const OurServices = () => {
       title: "Lighting Design",
       description:
         "Achieve the perfect balance of ambient, task, and accent lighting for a functional atmosphere.",
-      icon: "./src/assets/images/Lighting-design-icon.png",
+      icon: "/images/Lighting-design-icon.png",
     },
     {
       title: "Interior Design",
       description:
         "From concept to completion, we oversee every detail to bring your vision to life efficiently.",
-      icon: "./src/assets/images/Interior-design-icon.png",
+      icon: "/images/Interior-design-icon.png",
     },
     {
       title: "Outdoor Design",
       description:
         "Celebrate the changing seasons with our seasonal outdoor decor services.",
-      icon: "./src/assets/images/Outdoor-design-icon.png",
+      icon: "/images/Outdoor-design-icon.png",
     },
   ];
 

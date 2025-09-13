@@ -9,7 +9,7 @@ const CustomersFeedbacks = () => {
       {/* the pic */}
       <div className="hidden xl:block absolute -top-0 -left-0 ">
         <img
-          src="./src/assets/images/home.jpg"
+          src="/images/home.jpg"
           alt="home"
           width={711}
           height={400}
@@ -40,7 +40,7 @@ const CustomersFeedbacks = () => {
           </div>
           <div className="flex items-center gap-6">
             <img
-              src="./src/assets/images/user-1.png"
+              src="/images/user-1.png"
               alt="customer-1"
               width={50}
               height={50}
@@ -65,7 +65,7 @@ const CustomersFeedbacks = () => {
           </div>
           <div className="flex items-center gap-6">
             <img
-              src="./src/assets/images/user-2.png"
+              src="/images/user-2.png"
               alt="customer-1"
               width={50}
               height={50}
