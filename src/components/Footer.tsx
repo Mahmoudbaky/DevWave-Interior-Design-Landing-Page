@@ -17,11 +17,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-20 px-6">
           {/* col 1 */}
           <div className="flex flex-col gap-6 justify-between h-60 ">
-            <img
-              src="./src/assets/images/Logo-2.png"
-              alt="Logo-2"
-              width={150}
-            />
+            <img src="/images/Logo-2.png" alt="Logo-2" width={150} />
             <div className="max-w-[200px]">
               <p className="text-[#D1D1D1] text-sm text-pretty">
                 VivaDecor your premier destination for luxury and modern
