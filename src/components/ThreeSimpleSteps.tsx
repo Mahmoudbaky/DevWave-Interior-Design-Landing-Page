@@ -27,14 +27,14 @@ const ThreeSimpleSteps = () => {
 
   return (
     <section id="three-simple-steps" className="container mx-auto my-36">
-      <div className="flex flex-col justify-between lg:flex-row items-center gap-8">
+      <div className="flex flex-col px-4 md:px-0 mb-5 justify-between lg:flex-row md:items-center gap-8">
         {/* Right side : text */}
-        <div className="max-w-2xl flex flex-col mb-12 mt-[-70px] gap-7 justify-between h-[600px]">
-          <h2 className="text-[40px] font-semibold mb-6">
+        <div className="max-w-2xl flex flex-col mt-[-70px] gap-7 justify-between ">
+          <h2 className="text-[40px] md:text-[40px] text-left font-semibold mb-6">
             Designing Your Dream in Three Simple Steps
           </h2>
 
-          <div className=" flex flex-col gap-2">
+          <div className="flex flex-col gap-2">
             {steps.map((step) => (
               <div
                 key={step.id}
@@ -52,7 +52,7 @@ const ThreeSimpleSteps = () => {
                 </div>
                 <div className=" py-4">
                   <h3 className="text-[30px] font-semibold">{step.title}</h3>
-                  <p className="text-[#545454] w-[569px] mt-2">
+                  <p className="text-[#545454] max-w-[569px] mt-2">
                     {step.description}
                   </p>
                 </div>

@@ -5,7 +5,7 @@ const DesigningYourDream = () => {
     <section id="design-your-dream" className="container mx-auto my-28 ">
       <div className="flex flex-col justify-between lg:flex-row items-center gap-12">
         {/* Left side : image */}
-        <div>
+        <div className="px-4 md:px-0">
           <img
             src="/images/Mask-group.png"
             alt="Designing your dream"
@@ -47,7 +47,7 @@ const DesigningYourDream = () => {
 
           <Button
             variant={"default"}
-            className="w-[200px] h-[50px] px-4 py-2 rounded-[4px]"
+            className="w-[200px] h-[50px] px-4 py-2 mt-3.5 rounded-[4px]"
           >
             Learn More
           </Button>

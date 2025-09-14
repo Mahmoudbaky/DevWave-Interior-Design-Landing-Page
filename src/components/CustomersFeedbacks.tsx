@@ -27,9 +27,9 @@ const CustomersFeedbacks = () => {
       </div>
 
       {/* the reviews */}
-      <div className="absolute -bottom-0 -right-0 z-10 flex gap-10 text-white flex-row">
+      <div className="absolute -bottom-0 -right-0 z-10 flex gap-11 text-white flex-row">
         {/* comment 1 */}
-        <div className=" w-[450px] h-[450px] flex flex-col justify-between bg-[#1F1F1F] p-8">
+        <div className="hidden md:flex w-[450px] h-[450px] flex-col justify-between bg-[#1F1F1F] p-8">
           <div>
             <Quote size={50} />
           </div>
@@ -54,7 +54,7 @@ const CustomersFeedbacks = () => {
         </div>
 
         {/* comment 2 */}
-        <div className="w-[450px] h-[450px] flex flex-col justify-between bg-[#1F1F1F] p-8">
+        <div className="w-[450px] h-[450px] -translate-x-[40px] flex flex-col justify-between bg-[#1F1F1F] p-8">
           <div>
             <Quote size={50} />
           </div>
@@ -80,7 +80,7 @@ const CustomersFeedbacks = () => {
       </div>
 
       {/* arrow buttons */}
-      <div className="flex gap-4 absolute -bottom-0 -left-0 z-30">
+      <div className="flex gap-4 absolute -bottom-0 right-0 md:-bottom-0 md:-left-0 z-30">
         <div className="flex items-center justify-center w-[73px] h-[73px] text-black bg-[#F1F1F1]">
           <ArrowLeft size={40} />
         </div>
