@@ -2,7 +2,7 @@ import { Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 const DesigningYourDream = () => {
   return (
-    <section id="design-your-dream" className="container mx-auto my-28 ">
+    <section id="design-your-dream" className="container mx-auto mb-48 my-28 ">
       <div className="flex flex-col justify-between lg:flex-row items-center gap-12">
         {/* Left side : image */}
         <div className="px-4 md:px-0">

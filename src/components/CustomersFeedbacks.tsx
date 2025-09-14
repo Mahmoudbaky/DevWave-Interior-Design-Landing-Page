@@ -4,7 +4,7 @@ const CustomersFeedbacks = () => {
   return (
     <section
       id="customers-feedbacks"
-      className=" container mx-auto my-28 relative min-h-[620px] md:px-0 flex flex-col items-center justify-between p-6 gap-8"
+      className="container mx-auto my-28 relative min-h-[620px] md:px-0 flex flex-col items-center justify-between p-6 gap-8"
     >
       {/* the pic */}
       <div className="hidden xl:block absolute -top-0 -left-0 ">
@@ -21,13 +21,13 @@ const CustomersFeedbacks = () => {
       </div>
       {/* the text */}
       <div className="self-center  xl:absolute -top-0 -right-[-70px] ">
-        <h1 className="text-[40px] font-semibold text-center xl:text-left">
+        <h1 className="text-[30px] md:text-[40px] font-semibold text-center xl:text-left">
           What Our Customers <br /> Say About Us
         </h1>
       </div>
 
       {/* the reviews */}
-      <div className="absolute -bottom-0 -right-0 z-10 flex gap-11 text-white flex-row">
+      <div className="absolute  -bottom-0 -right-0 z-10 flex gap-11 text-white flex-row">
         {/* comment 1 */}
         <div className="hidden md:flex w-[450px] h-[450px] flex-col justify-between bg-[#1F1F1F] p-8">
           <div>
@@ -54,11 +54,11 @@ const CustomersFeedbacks = () => {
         </div>
 
         {/* comment 2 */}
-        <div className="w-[450px] h-[450px] -translate-x-[40px] flex flex-col justify-between bg-[#1F1F1F] p-8">
+        <div className=" w-[300px]  md:w-[450px] md:h-[450px] -translate-x-[20px] md:translate-x-0 flex flex-col gap-10 justify-between bg-[#1F1F1F] p-8">
           <div>
             <Quote size={50} />
           </div>
-          <div className="text-[22px]">
+          <div className="text-[18px] md:text-[22px]">
             Exceptional service! From the initial consultation to the final
             reveal, your team demonstrated professionalism and a keen eye for
             design. Highly recommend!
@@ -80,8 +80,8 @@ const CustomersFeedbacks = () => {
       </div>
 
       {/* arrow buttons */}
-      <div className="flex gap-4 absolute -bottom-0 right-0 md:-bottom-0 md:-left-0 z-30">
-        <div className="flex items-center justify-center w-[73px] h-[73px] text-black bg-[#F1F1F1]">
+      <div className="flex gap-4 absolute -bottom-0 right-0 xl:-bottom-0 xl:-left-0 z-30">
+        <div className="flex items-center justify-center  w-[73px] h-[73px] text-black bg-[#F1F1F1]">
           <ArrowLeft size={40} />
         </div>
         <div className="flex items-center justify-center w-[73px] h-[73px] bg-[#F1F1F1]">
